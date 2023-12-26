@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+.banner{
+    text-align: center;
+    position: relative;
+}
+
+.banner__imagem{
+    background-image: url("../img/banner.jpg");
+    width: 100%;
+    height: calc(100vh - 72px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner__titulo{
+    color: white;
+    font-family: 'Lobster', sans-serif;
+    font-size: 5.0625rem;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+}
+
+.texto{
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.texto__titulo{
+    font-family: 'Lobster', sans-serif;
+    color: #8d0606;
+    font-size: 3.1875rem;
+}
+
+.texto__texto{
+    color: #595959;
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+@media screen and (min-width: 0) {
+    .banner__titulo{
+        font-size: 3rem;
+    }
+
+    .banner__imagem{
+        height: calc(100vh - 51px);
+    }
+
+    .texto{
+        padding: 2.5rem 1rem;
+    }
+
+    .texto__titulo{
+        font-size: 2rem;
+    }
+
+    .texto__texto{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .banner__titulo{
+        font-size: 5.0625rem; 
+    }
+
+    .banner__imagem{
+        height: calc(100vh - 72px);
+    }
+
+    .texto{
+        padding: 2.5rem;
+    }
+
+    .texto__titulo{
+        font-size: 3.1875rem;
+    }
+
+    .texto__texto{
+        font-size: 1.75rem;
+    }
+}
